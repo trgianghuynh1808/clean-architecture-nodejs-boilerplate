@@ -1,0 +1,9 @@
+type Example @key(fields: "id") {
+  id: ID!
+
+  type: EExampleType
+}
+
+type Query {
+  get_details(id: ID!): Example
+}

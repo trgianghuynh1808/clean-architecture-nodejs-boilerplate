@@ -1,0 +1,11 @@
+version: '3'
+services:
+  core_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5601:4029
+    volumes:
+      - ./_env:/usr/src/app/_env
+      - ./logs:/usr/src/app/logs

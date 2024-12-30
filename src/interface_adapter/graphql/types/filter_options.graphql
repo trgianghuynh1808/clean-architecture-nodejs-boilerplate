@@ -1,0 +1,17 @@
+input IFilter {
+  page: Int
+  page_size: Int
+  search_value: String
+
+  """
+  orders: [["field_name_1", "ASC"], ["field_name_2", "DESC"]]
+  """
+  orders: [[NonEmptyString!]]
+}
+
+type FilterOptions {
+  page: Int
+  page_size: Int
+  search_value: String
+  orders: [[String!]]
+}

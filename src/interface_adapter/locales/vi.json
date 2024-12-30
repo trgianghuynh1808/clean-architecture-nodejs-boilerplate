@@ -1,0 +1,30 @@
+{
+  "application": {
+    "error": {
+      "401": "Không được phép.",
+      "403": "Bị cấm.",
+      "404": "Không tìm thấy nội dung.",
+      "500": "Lỗi xử lý bên trong ứng dụng.",
+      "bad_request": "Yêu cầu không hợp lệ.",
+      "not_verify_token": "Không thể xác thực mã xác nhân, vui lòng thử lại!",
+      "query": {
+        "not_found": "Dòng dữ liệu không được tìm thấy!"
+      },
+      "permission": {
+        "access_denied": "Truy cập bị từ chối!",
+        "access_timeout": "Hết thời truy cập!",
+        "data_access_denied": "Bạn không có quyền truy cập vào dữ liệu này!",
+        "unauthorized": "Không có quyền!"
+      },
+      "grant": {
+        "action_not_found": "Mã ID hành động: {{{id}}} không tồn tại!"
+      },
+      "missing": {
+        "cid": "Thiếu khoá cid trong header request!"
+      },
+      "data": {
+        "duplicated": "Dữ liệu bị trùng {{{name}}}"
+      }
+    }
+  }
+}

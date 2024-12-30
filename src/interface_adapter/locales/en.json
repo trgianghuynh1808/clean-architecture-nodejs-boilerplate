@@ -1,0 +1,30 @@
+{
+  "application": {
+    "error": {
+      "401": "Unauthorized.",
+      "403": "Forbidden.",
+      "404": "Not found.",
+      "500": "Internal server error.",
+      "bad_request": "Bad request.",
+      "not_verify_token": "Cannot verify token, please try again!",
+      "query": {
+        "not_found": "The record data not found!"
+      },
+      "permission": {
+        "access_denied": "Access denied!",
+        "access_timeout": "Access timeout!",
+        "data_access_denied": "You not have permission with this data",
+        "unauthorized": "Unauthorized!"
+      },
+      "grant": {
+        "action_not_found": "The action id: {{{id}}} is not existed!"
+      },
+      "missing": {
+        "cid": "Missing key cid in header!"
+      },
+      "data": {
+        "duplicated": "Duplicated data {{{name}}}"
+      }
+    }
+  }
+}
