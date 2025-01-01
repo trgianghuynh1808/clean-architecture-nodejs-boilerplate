@@ -24,12 +24,15 @@ import { DocumentNode, GraphQLFormattedError } from 'graphql';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const typesArray = loadFilesSync(join(__dirname, 'interface/graphql/**/*.graphql'), {
+const typesArray = loadFilesSync(join(__dirname, 'interface_adapter/graphql/**/*.graphql'), {
   recursive: true,
 });
-const resolversArray = loadFilesSync(join(__dirname, 'interface/graphql/**/*.resolver{.ts,.js}'), {
-  recursive: true,
-});
+const resolversArray = loadFilesSync(
+  join(__dirname, 'interface_adapter/graphql/**/*.resolver{.ts,.js}'),
+  {
+    recursive: true,
+  }
+);
 
 export const typeDefs: DocumentNode = mergeTypeDefs(typesArray);
 export const resolvers: IResolvers = mergeResolvers(resolversArray);

@@ -8,7 +8,7 @@ const i18nRouter = Router();
 i18nRouter.use((req: Request, _res: Response, next) => {
   i18n.configure({
     locales: ['vi', 'en'],
-    directory: path.join(__dirname, '..', '..', 'interface/locales'),
+    directory: path.join(__dirname, '..', '..', 'interface_adapter/locales'),
     objectNotation: true,
     logWarnFn: function (msg: any) {
       console.warn('warn', msg);
